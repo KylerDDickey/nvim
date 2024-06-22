@@ -15,6 +15,9 @@ local M = {
     typescriptreact = {
       require("formatter.filetypes.typescriptreact").prettier
     },
+    nix = {
+      require("formatter.filetypes.nix").nixfmt
+    },
     ["*"] = {
       require("formatter.filetypes.any").remove_trailing_whitespace
     }

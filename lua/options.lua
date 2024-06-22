@@ -72,6 +72,6 @@ if vim.g.neovide then
   -- Configure animations
   vim.g.neovide_cursor_animation_length = 0.05
 
-  -- Fontjiaoshijie
+  -- Font
   vim.o.guifont = "JetBrainsMono Nerd Font:h11"
 end
