@@ -68,17 +68,14 @@ local plugins = {
     event = { "BufReadPost", "BufNewFile" },
     main = "nvim-treesitter.configs",
     opts = {
-      highlight = {
-        enable = true,
-      },
       ensure_installed = {
         "bash",
         "css",
-        "javascript",
         "html",
+        "javascript",
         "lua",
-        "typescript",
         "tsx",
+        "typescript",
       },
     },
   },
