@@ -52,7 +52,8 @@ local plugins = {
         "eslint-lsp",
         "js-debug-adapter",
         "prettier",
-        "typescript-language-server"
+        "pyright",
+        "typescript-language-server",
       },
     },
   },
@@ -76,6 +77,7 @@ local plugins = {
         "lua",
         "tsx",
         "typescript",
+        "python",
       },
     },
   },

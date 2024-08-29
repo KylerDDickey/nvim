@@ -15,6 +15,9 @@ local M = {
     typescriptreact = {
       require("formatter.filetypes.typescriptreact").prettier
     },
+    python = {
+      require("formatter.filetypes.python").yapf
+    },
     nix = {
       require("formatter.filetypes.nix").nixfmt
     },
