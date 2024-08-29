@@ -54,6 +54,7 @@ local plugins = {
         "prettier",
         "pyright",
         "typescript-language-server",
+        "yapf",
       },
     },
   },
