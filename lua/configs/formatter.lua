@@ -1,5 +1,8 @@
 local M = {
   filetype = {
+    astro = {
+      require("formatter.filetypes.javascript").prettier
+    },
     css = {
       require("formatter.filetypes.javascript").prettier
     },

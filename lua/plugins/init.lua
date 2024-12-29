@@ -71,6 +71,7 @@ local plugins = {
     main = "nvim-treesitter.configs",
     opts = {
       ensure_installed = {
+        "astro",
         "bash",
         "css",
         "html",
