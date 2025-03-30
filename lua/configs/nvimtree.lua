@@ -2,6 +2,6 @@ local nvtree = require("nvim-tree")
 
 nvtree.setup({
   view = {
-    width = 50,
+    width = 40,
   },
 })
