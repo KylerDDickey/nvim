@@ -83,6 +83,14 @@ local plugins = {
       },
     },
   },
+  {
+    "nvim-tree/nvim-tree.lua",
+    main = "nvim-tree/nvim-tree.lua"
+    config = function ()
+      require("nvchad.configs.nvimtree")
+      require("configs.nvimtree")
+    end
+  },
 }
 
 return plugins
