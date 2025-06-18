@@ -50,6 +50,7 @@ local plugins = {
     opts = {
       ensure_installed = {
         "eslint-lsp",
+        "gopls",
         "js-debug-adapter",
         "prettier",
         "pyright",
@@ -74,6 +75,7 @@ local plugins = {
         "astro",
         "bash",
         "css",
+        "go",
         "html",
         "javascript",
         "lua",
