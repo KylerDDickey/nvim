@@ -79,6 +79,7 @@ local plugins = {
         "html",
         "javascript",
         "lua",
+        "templ",
         "tsx",
         "typescript",
         "python",

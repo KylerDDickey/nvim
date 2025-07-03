@@ -24,6 +24,9 @@ local M = {
     nix = {
       require("formatter.filetypes.nix").nixfmt
     },
+    go = {
+      require("formatter.filetypes.go").gofmt
+    },
     ["*"] = {
       require("formatter.filetypes.any").remove_trailing_whitespace
     }

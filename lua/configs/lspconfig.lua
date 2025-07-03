@@ -20,6 +20,17 @@ lspconfig.nixd.setup {
   capabilities = capabilities,
 }
 
+lspconfig.templ.setup {
+  on_attach = on_attach,
+  capabilities = capabilities,
+  default_config = {
+    cmd = { "templ", "lsp" },
+    filetypes = { "templ" },
+    root_dir = lspconfig.util.root_pattern("go.mod"),
+    settings = {},
+  }
+}
+
 lspconfig.ts_ls.setup {
   on_attach = on_attach,
   capabilities = capabilities,
