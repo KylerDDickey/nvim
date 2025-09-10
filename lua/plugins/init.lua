@@ -69,6 +69,7 @@ local plugins = {
   {
     "nvim-treesitter/nvim-treesitter",
     event = { "BufReadPost", "BufNewFile" },
+    lazy = false, -- https://github.com/nvim-treesitter/nvim-treesitter/discussions/5289
     main = "nvim-treesitter.configs",
     opts = {
       ensure_installed = {
