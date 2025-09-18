@@ -21,6 +21,9 @@ local M = {
     python = {
       require("formatter.filetypes.python").yapf
     },
+    lua = {
+      require("formatter.filetypes.lua").stylua
+    },
     nix = {
       require("formatter.filetypes.nix").nixfmt
     },

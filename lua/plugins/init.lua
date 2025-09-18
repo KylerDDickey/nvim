@@ -46,19 +46,16 @@ local plugins = {
     end,
   },
   {
-    "williamboman/mason.nvim",
-    opts = {
-      ensure_installed = {
-        "luals",
-        "nixd",
-      },
-    },
-  },
-  {
     "neovim/nvim-lspconfig",
     config = function ()
-      require("nvchad.configs.lspconfig") -- TODO: Discern if this is needed
+      -- Kept for backwards compatibility, may not need in the future.
+      require("nvchad.configs.lspconfig")
+
+      -- New home for configuring LSPs. Consider moving since it is natively supported
+      -- and is no longer a plugin
       require("configs.lsp")
+
+      vim.lsp.config("luals")
     end,
   },
   {

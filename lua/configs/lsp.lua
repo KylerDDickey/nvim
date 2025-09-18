@@ -1,7 +1,7 @@
 local lsps = {
   { "nixd" },
   { "gopls" },
-  { "luals" },
+  -- { "luals" }, -- Top-level configured since it's the config language, here for completeness
   { "pyright" },
   {
     "templ",
@@ -9,7 +9,6 @@ local lsps = {
       default_config = {
         cmd = { "templ", "lsp" },
         filetypes = { "templ" },
-        -- root_dir = .root_pattern("go.mod"), -- Maybe will not need this
         settings = {},
       },
     },
