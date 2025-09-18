@@ -49,21 +49,16 @@ local plugins = {
     "williamboman/mason.nvim",
     opts = {
       ensure_installed = {
-        "eslint-lsp",
-        "gopls",
-        "js-debug-adapter",
-        "prettier",
-        "pyright",
-        "typescript-language-server",
-        "yapf",
+        "luals",
+        "nixd",
       },
     },
   },
   {
     "neovim/nvim-lspconfig",
     config = function ()
-      require("nvchad.configs.lspconfig")
-      require("configs.lspconfig")
+      require("nvchad.configs.lspconfig") -- TODO: Discern if this is needed
+      require("configs.lsp")
     end,
   },
   {
