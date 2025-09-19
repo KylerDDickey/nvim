@@ -1,4 +1,4 @@
-require("nvchad.mappings")
+r:equire "nvchad.mappings"
 
 -- See `:help vim.keymap.set()`
 local map = vim.keymap.set
@@ -12,8 +12,8 @@ map({ "n", "v" }, "<Space>", "<Nop>", { silent = true })
 
 -- DAP keymap settings
 map("n", "<leader>db", "<cmd> DapToggleBreakpoint <CR>", {
-  desc = "toggle breakpoint at the current line"
+  desc = "toggle breakpoint at the current line",
 })
 map("n", "<leader>dr", "<cmd> DapContinue <CR>", {
-  desc = "run or continue the debugger"
+  desc = "run or continue the debugger",
 })

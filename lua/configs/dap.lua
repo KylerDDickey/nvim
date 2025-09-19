@@ -1,4 +1,4 @@
-local dap = require("dap")
+local dap = require "dap"
 
 dap.adapters["pwa-node"] = {
   type = "server",
@@ -6,7 +6,7 @@ dap.adapters["pwa-node"] = {
   port = 8123,
   executable = {
     command = "js-debug-adapter",
-  }
+  },
 }
 
 -- Debug configurations
@@ -20,7 +20,7 @@ local jsEcosystemDebugConfig = {
 
 local languageDebugConfigs = {
   ["javascript"] = jsEcosystemDebugConfig,
-  ["typescript"] = jsEcosystemDebugConfig
+  ["typescript"] = jsEcosystemDebugConfig,
 }
 
 for language, configuration in ipairs(languageDebugConfigs) do

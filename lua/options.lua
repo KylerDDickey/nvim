@@ -1,4 +1,4 @@
-require("nvchad.options")
+require "nvchad.options"
 
 -- See `:help vim.o`
 
@@ -26,11 +26,11 @@ vim.wo.signcolumn = "yes"
 
 -- Sync clipboard between OS and Neovim.
 -- See `:help 'clipboard'`
-vim.o.clipboard = 'unnamedplus'
+vim.o.clipboard = "unnamedplus"
 
 -- Add the '@' character to the set of characters that may be used in file
 -- names.
-vim.opt.isfname:append("@-@")
+vim.opt.isfname:append "@-@"
 
 -- Better search highlighting and case-insensitive searching UNLESS \C or
 -- capital in search.
@@ -40,10 +40,10 @@ vim.o.ignorecase = true
 vim.o.smartcase = true
 
 -- Enable mouse mode.
-vim.o.mouse = 'a'
+vim.o.mouse = "a"
 
 -- Set completeopt to have a better completion experience.
-vim.o.completeopt = 'menuone,noselect'
+vim.o.completeopt = "menuone,noselect"
 
 -- Update timing (in ms). If things go awry, increase this value (default is
 -- 4000).

@@ -1,7 +1,7 @@
 local lsps = {
   { "nixd" },
   { "gopls" },
-  { "luals" },
+  -- { "luals" },
   { "pyright" },
   {
     "templ",

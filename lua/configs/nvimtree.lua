@@ -1,7 +1,7 @@
-local nvtree = require("nvim-tree")
+local nvtree = require "nvim-tree"
 
-nvtree.setup({
+nvtree.setup {
   view = {
     width = 40,
   },
-})
+}
