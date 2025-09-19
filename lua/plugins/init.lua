@@ -49,7 +49,7 @@ local plugins = {
     "neovim/nvim-lspconfig",
     config = function()
       -- Kept for backwards compatibility, may not need in the future.
-      require "nvchad.configs.lspconfig"
+      -- require "nvchad.configs.lspconfig"
 
       -- New home for configuring LSPs. Consider moving since it is natively supported
       -- and is no longer a plugin
