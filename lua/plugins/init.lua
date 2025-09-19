@@ -6,56 +6,54 @@ local plugins = {
       "mfussenegger/nvim-dap",
       "nvim-neotest/nvim-nio",
     },
-    config = function ()
-      local dap = require("dap")
-      local dapui = require("dapui")
+    config = function()
+      local dap = require "dap"
+      local dapui = require "dapui"
 
       dapui.setup()
 
-      dap.listeners.after.event_initialized["dapui_config"] = function ()
+      dap.listeners.after.event_initialized["dapui_config"] = function()
         dapui.open()
       end
 
-      dap.listeners.before.event_terminated["dapui_config"] = function ()
+      dap.listeners.before.event_terminated["dapui_config"] = function()
         dapui.close()
       end
 
-      dap.listeners.before.event_exited["dapui_config"] = function ()
+      dap.listeners.before.event_exited["dapui_config"] = function()
         dapui.close()
       end
     end,
   },
   {
     "mfussenegger/nvim-dap",
-    config = function ()
-      require("configs.dap")
+    config = function()
+      require "configs.dap"
     end,
   },
   {
     "mhartington/formatter.nvim",
     event = "VeryLazy",
-    opts = function ()
-      return require("configs.formatter")
+    opts = function()
+      return require "configs.formatter"
     end,
   },
   {
     "mfussenegger/nvim-lint",
     event = "VeryLazy",
-    config = function ()
-      require("configs.lint")
+    config = function()
+      require "configs.lint"
     end,
   },
   {
     "neovim/nvim-lspconfig",
-    config = function ()
+    config = function()
       -- Kept for backwards compatibility, may not need in the future.
-      require("nvchad.configs.lspconfig")
+      require "nvchad.configs.lspconfig"
 
       -- New home for configuring LSPs. Consider moving since it is natively supported
       -- and is no longer a plugin
-      require("configs.lsp")
-
-      vim.lsp.config("luals")
+      require "configs.lsp"
     end,
   },
   {
@@ -96,10 +94,10 @@ local plugins = {
   {
     "nvim-tree/nvim-tree.lua",
     main = "nvim-tree/nvim-tree.lua",
-    config = function ()
-      require("nvchad.configs.nvimtree")
-      require("configs.nvimtree")
-    end
+    config = function()
+      require "nvchad.configs.nvimtree"
+      require "configs.nvimtree"
+    end,
   },
 }
 

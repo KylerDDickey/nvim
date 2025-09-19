@@ -1,7 +1,7 @@
 local lsps = {
   { "nixd" },
   { "gopls" },
-  -- { "luals" }, -- Top-level configured since it's the config language, here for completeness
+  { "luals" },
   { "pyright" },
   {
     "templ",
@@ -18,7 +18,7 @@ local lsps = {
     {
       init_options = {
         preferences = {
-          disableSuggestions = true
+          disableSuggestions = true,
         },
       },
     },
@@ -26,10 +26,10 @@ local lsps = {
 }
 
 for _, lsp in pairs(lsps) do
-    local name, config = lsp[1], lsp[2]
-    vim.lsp.enable(name)
+  local name, config = lsp[1], lsp[2]
+  vim.lsp.enable(name)
 
-    if config then
-        vim.lsp.config(name, config)
-    end
+  if config then
+    vim.lsp.config(name, config)
+  end
 end
