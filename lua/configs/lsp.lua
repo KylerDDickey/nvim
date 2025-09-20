@@ -33,3 +33,9 @@ for _, lsp in pairs(lsps) do
     vim.lsp.config(name, config)
   end
 end
+
+-- Enable inline LSP diagnostics.
+-- This was disabled by default in Neovim 0.11.
+vim.diagnostic.config {
+  virtual_lines = true,
+}
